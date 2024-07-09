@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f715980a3a8d759e53c626f72f29c1e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f715980a3a8d759e53c626f72f29c1e0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f715980a3a8d759e53c626f72f29c1e0 = L.map(
+                "map_f715980a3a8d759e53c626f72f29c1e0",
+                {
+                    center: [19.076, 72.8777],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_314c70270f73137a1a5d130fd4826621 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_314c70270f73137a1a5d130fd4826621.addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+            var marker_7984cb51ac10467181d01e467f263700 = L.marker(
+                [23.2599, 77.4126],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_969cce6c599c76d6777d0707d39fee94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28fd6884ac00b9229aaf47374284bbe4 = $(`<div id="html_28fd6884ac00b9229aaf47374284bbe4" style="width: 100.0%; height: 100.0%;">Entry: Bhopal Toll</div>`)[0];
+                popup_969cce6c599c76d6777d0707d39fee94.setContent(html_28fd6884ac00b9229aaf47374284bbe4);
+            
+        
+
+        marker_7984cb51ac10467181d01e467f263700.bindPopup(popup_969cce6c599c76d6777d0707d39fee94)
+        ;
+
+        
+    
+    
+            var marker_85d0a97ff11cb5225a53595561f20c21 = L.marker(
+                [23.2945, 77.3943],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_c0c4534e07496052e187a70152d724a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bddf5a159d2b0efc6ea018e08f001d4 = $(`<div id="html_3bddf5a159d2b0efc6ea018e08f001d4" style="width: 100.0%; height: 100.0%;">Exit: Bhopal Toll</div>`)[0];
+                popup_c0c4534e07496052e187a70152d724a1.setContent(html_3bddf5a159d2b0efc6ea018e08f001d4);
+            
+        
+
+        marker_85d0a97ff11cb5225a53595561f20c21.bindPopup(popup_c0c4534e07496052e187a70152d724a1)
+        ;
+
+        
+    
+    
+            var poly_line_ae5073d779de24d3e698b6df5bc60165 = L.polyline(
+                [[23.2599, 77.4126], [23.2945, 77.3943]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+            var marker_c6a082e2285e549a579dc583371e3472 = L.marker(
+                [22.7196, 75.8577],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_313f1ecb076f05daa29ad221ce02e330 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7f425bb71d91c53ec3975e96058ab14 = $(`<div id="html_a7f425bb71d91c53ec3975e96058ab14" style="width: 100.0%; height: 100.0%;">Entry: Indore Toll</div>`)[0];
+                popup_313f1ecb076f05daa29ad221ce02e330.setContent(html_a7f425bb71d91c53ec3975e96058ab14);
+            
+        
+
+        marker_c6a082e2285e549a579dc583371e3472.bindPopup(popup_313f1ecb076f05daa29ad221ce02e330)
+        ;
+
+        
+    
+    
+            var marker_64b6ad4667669cac0af4cdfe1879b4ea = L.marker(
+                [22.7556, 75.8852],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_4b7ce30f02470323026e271c36e628bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac4d4d0be4d2a1de615a770b81154967 = $(`<div id="html_ac4d4d0be4d2a1de615a770b81154967" style="width: 100.0%; height: 100.0%;">Exit: Indore Toll</div>`)[0];
+                popup_4b7ce30f02470323026e271c36e628bb.setContent(html_ac4d4d0be4d2a1de615a770b81154967);
+            
+        
+
+        marker_64b6ad4667669cac0af4cdfe1879b4ea.bindPopup(popup_4b7ce30f02470323026e271c36e628bb)
+        ;
+
+        
+    
+    
+            var poly_line_6445894ed12210ef08a9e0304cacc8b3 = L.polyline(
+                [[22.7196, 75.8577], [22.7556, 75.8852]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+            var marker_92a286c877d9dd166a09b51f1d74769e = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_c5dd8fe2b5d2fc9b0170917f34ceaf7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3070c314d7eda1f25b0db0307ca07127 = $(`<div id="html_3070c314d7eda1f25b0db0307ca07127" style="width: 100.0%; height: 100.0%;">Entry: Nagpur Toll</div>`)[0];
+                popup_c5dd8fe2b5d2fc9b0170917f34ceaf7b.setContent(html_3070c314d7eda1f25b0db0307ca07127);
+            
+        
+
+        marker_92a286c877d9dd166a09b51f1d74769e.bindPopup(popup_c5dd8fe2b5d2fc9b0170917f34ceaf7b)
+        ;
+
+        
+    
+    
+            var marker_8e8bf4115f1c1a54efa59847aa986b2c = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_a9df95f6f9585ba329f73471944cd82c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e567cf0d05b2db1aaa1606cbecc78047 = $(`<div id="html_e567cf0d05b2db1aaa1606cbecc78047" style="width: 100.0%; height: 100.0%;">Exit: Nagpur Toll</div>`)[0];
+                popup_a9df95f6f9585ba329f73471944cd82c.setContent(html_e567cf0d05b2db1aaa1606cbecc78047);
+            
+        
+
+        marker_8e8bf4115f1c1a54efa59847aa986b2c.bindPopup(popup_a9df95f6f9585ba329f73471944cd82c)
+        ;
+
+        
+    
+    
+            var poly_line_f6bbf993768621a2060e4160b27419c6 = L.polyline(
+                [[21.1458, 79.0882], [21.2514, 79.1575]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+            var marker_372d3579d17f9cc1aeda7e34a999796d = L.marker(
+                [21.169, 79.688],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_dd469cec8af828b70b9ce758ac957f2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea55f029c3285721361069d627beba8c = $(`<div id="html_ea55f029c3285721361069d627beba8c" style="width: 100.0%; height: 100.0%;">Entry: Bhandara Toll</div>`)[0];
+                popup_dd469cec8af828b70b9ce758ac957f2b.setContent(html_ea55f029c3285721361069d627beba8c);
+            
+        
+
+        marker_372d3579d17f9cc1aeda7e34a999796d.bindPopup(popup_dd469cec8af828b70b9ce758ac957f2b)
+        ;
+
+        
+    
+    
+            var marker_17e3d8cbb87ed977c343f484bc75d358 = L.marker(
+                [21.1774, 79.6819],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_2153e7cdc6092a143fb849b983d2508a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1948e18651e3b523620c269a08bd15ca = $(`<div id="html_1948e18651e3b523620c269a08bd15ca" style="width: 100.0%; height: 100.0%;">Exit: Bhandara Toll</div>`)[0];
+                popup_2153e7cdc6092a143fb849b983d2508a.setContent(html_1948e18651e3b523620c269a08bd15ca);
+            
+        
+
+        marker_17e3d8cbb87ed977c343f484bc75d358.bindPopup(popup_2153e7cdc6092a143fb849b983d2508a)
+        ;
+
+        
+    
+    
+            var poly_line_cd3cbfa5645a838e48628ee11c7f39e9 = L.polyline(
+                [[21.169, 79.688], [21.1774, 79.6819]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+            var marker_0d33e559a941611a03cc9f0e5e0238e2 = L.marker(
+                [21.2514, 81.6296],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_1a4d2e5f8fa65a070fdb9c922801ebc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_263bd70ee90a277f33972863a6568568 = $(`<div id="html_263bd70ee90a277f33972863a6568568" style="width: 100.0%; height: 100.0%;">Entry: Raipur Toll</div>`)[0];
+                popup_1a4d2e5f8fa65a070fdb9c922801ebc3.setContent(html_263bd70ee90a277f33972863a6568568);
+            
+        
+
+        marker_0d33e559a941611a03cc9f0e5e0238e2.bindPopup(popup_1a4d2e5f8fa65a070fdb9c922801ebc3)
+        ;
+
+        
+    
+    
+            var marker_b0d9b7d345e393fdb0d84ba96e5b8800 = L.marker(
+                [21.292, 81.6369],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_674293b939ec9785b2651c02a93d0241 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8a6a06a0d9c2307a1329cf406063704 = $(`<div id="html_e8a6a06a0d9c2307a1329cf406063704" style="width: 100.0%; height: 100.0%;">Exit: Raipur Toll</div>`)[0];
+                popup_674293b939ec9785b2651c02a93d0241.setContent(html_e8a6a06a0d9c2307a1329cf406063704);
+            
+        
+
+        marker_b0d9b7d345e393fdb0d84ba96e5b8800.bindPopup(popup_674293b939ec9785b2651c02a93d0241)
+        ;
+
+        
+    
+    
+            var poly_line_8f2bc99f3590fb56587a4b60b0aef988 = L.polyline(
+                [[21.2514, 81.6296], [21.292, 81.6369]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+            var marker_7a207479ed69c5460eca99424758759d = L.marker(
+                [21.1774, 79.6819],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_012d88cdaa5ad8dca3ca56e61098bdc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46eba058248198125f0d122a4ad1251c = $(`<div id="html_46eba058248198125f0d122a4ad1251c" style="width: 100.0%; height: 100.0%;">Vehicle 1, Total Toll: ₹297.17</div>`)[0];
+                popup_012d88cdaa5ad8dca3ca56e61098bdc5.setContent(html_46eba058248198125f0d122a4ad1251c);
+            
+        
+
+        marker_7a207479ed69c5460eca99424758759d.bindPopup(popup_012d88cdaa5ad8dca3ca56e61098bdc5)
+        ;
+
+        
+    
+    
+            var marker_34ebd8d293bc9f49dff260ee044cf2af = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_adea656583288757b653cc06d3ff7caf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_762d4a0700058f5dd1900fe8b1124b08 = $(`<div id="html_762d4a0700058f5dd1900fe8b1124b08" style="width: 100.0%; height: 100.0%;">Vehicle 2, Total Toll: ₹495.76</div>`)[0];
+                popup_adea656583288757b653cc06d3ff7caf.setContent(html_762d4a0700058f5dd1900fe8b1124b08);
+            
+        
+
+        marker_34ebd8d293bc9f49dff260ee044cf2af.bindPopup(popup_adea656583288757b653cc06d3ff7caf)
+        ;
+
+        
+    
+    
+            var marker_e6a4392cccab6fe4b2b21c6d10b7537f = L.marker(
+                [22.7556, 75.8852],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_7af29fb1201f187abc1d6b944e215d41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7827f96585a3fcfab78b524a8a8ed882 = $(`<div id="html_7827f96585a3fcfab78b524a8a8ed882" style="width: 100.0%; height: 100.0%;">Vehicle 3, Total Toll: ₹171.51</div>`)[0];
+                popup_7af29fb1201f187abc1d6b944e215d41.setContent(html_7827f96585a3fcfab78b524a8a8ed882);
+            
+        
+
+        marker_e6a4392cccab6fe4b2b21c6d10b7537f.bindPopup(popup_7af29fb1201f187abc1d6b944e215d41)
+        ;
+
+        
+    
+    
+            var marker_4f306782912486132beb37f6781c3e31 = L.marker(
+                [21.292, 81.6369],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_b4d95bcd91a8ee137bfa4869d44f004c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb7b396e40ef576f32ac3e2b37a3ccbb = $(`<div id="html_fb7b396e40ef576f32ac3e2b37a3ccbb" style="width: 100.0%; height: 100.0%;">Vehicle 4, Total Toll: ₹279.94</div>`)[0];
+                popup_b4d95bcd91a8ee137bfa4869d44f004c.setContent(html_fb7b396e40ef576f32ac3e2b37a3ccbb);
+            
+        
+
+        marker_4f306782912486132beb37f6781c3e31.bindPopup(popup_b4d95bcd91a8ee137bfa4869d44f004c)
+        ;
+
+        
+    
+    
+            var marker_9ab6884f2e2f79c81463bc42cb6db86c = L.marker(
+                [23.2945, 77.3943],
+                {}
+            ).addTo(map_f715980a3a8d759e53c626f72f29c1e0);
+        
+    
+        var popup_c7355c59ee08fb458c6ccd05901fdd9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_980fa74d13b37efb3598f3fb434dba99 = $(`<div id="html_980fa74d13b37efb3598f3fb434dba99" style="width: 100.0%; height: 100.0%;">Vehicle 5, Total Toll: ₹232.72</div>`)[0];
+                popup_c7355c59ee08fb458c6ccd05901fdd9f.setContent(html_980fa74d13b37efb3598f3fb434dba99);
+            
+        
+
+        marker_9ab6884f2e2f79c81463bc42cb6db86c.bindPopup(popup_c7355c59ee08fb458c6ccd05901fdd9f)
+        ;
+
+        
+    
+</script>
+</html>
